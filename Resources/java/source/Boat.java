@@ -8,7 +8,7 @@ public class Boat {
 
     // property declarations
         // Note:  anchorX and anchorY represent the upper left corner of the body of this boat.
-		//        boatName represents the the name of this boat
+        //        boatName represents the the name of this boat
 		
     private Integer anchorX, anchorY;
     private String boatName;
