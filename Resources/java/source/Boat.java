@@ -7,14 +7,15 @@ import java.awt.*;
 public class Boat {
 
     // property declarations
-        // Note:  anchorX and anchorY represent the upper left corner of the body of the boat.
+        // Note:  anchorX and anchorY represent the upper left corner of the body of this boat.
+		//        boatName represents the the name of this boat
 		
     private Integer anchorX, anchorY;
-    private String name;
+    private String boatName;
 
 	
     public Boat(String n, Integer over, Integer down) {
-        name = n;
+        boatName = n;
         anchorX = over;
         anchorY = down;
     } // end of constructor
@@ -53,7 +54,7 @@ public class Boat {
 	
     public String toString() {
         String result;
-        result = "I'm a Boat named " + name + " at (" + anchorX + "," + anchorY + ").";
+        result = "I'm a Boat named " + boatName + " at (" + anchorX + "," + anchorY + ").";
         return result;
     } // end of toString
 
