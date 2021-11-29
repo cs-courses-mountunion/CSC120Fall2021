@@ -167,13 +167,14 @@ method for the <code>President</code> object in position 14 in the
 array in the Java Console. </li>
     </ol>
     <br>
-    <font color="#990000">ANSWERS: Here is the MUPanel class with the
-answers filled in:
+    <font color="#cc0000">ANSWERS: Here is the MUPanel class with the
+answers filled in and shown in RED text:
+    </font>
 <pre>
     public class MUPanel extends JPanel {
 	
 	
-        /* a. */  private President[] prezArray;<br><br>        <br>        public MUPanel() {<br>            <br>            /* b. */  prezArray = new President[47];<br><br>            /* c. */  for (Integer x = 0; x &lt; prezArray.length; x++) {<br>                          prezArray[x] = new President();<br>                      }<br><br>            /* d. */  prezArray[25].setName( "McKinley" );<br><br>            /* e. */  prezArray[25].setParty( "R" );<br><br>            /* f. */  prezArray[35].setName( "Kennedy" );<br>                      prezArray[35].setParty( "D" );<br><br>            /* g. */  System.out.println( prezArray[14].toString() );<br><br>            displayAllPresidents();<br>        } // end of constructor<br><br>        public void displayAllPresidents() {<br>            System.out.println("Here are all the Presidents:");<br>            for (Integer p = 0; p &lt; prezArray.length; p++) {<br>                System.out.println( "\t" + prezArray[p].toString() );<br>            }<br>        } // end of displayAllPresidents()<br>
+        <font color="#cc0000">/* a. */  private President[] prezArray;</font><br><br>        <br>        public MUPanel() {<br>            <br>            <font color="#cc0000">/* b. */  prezArray = new President[47];<br><br>            /* c. */  for (Integer x = 0; x &lt; prezArray.length; x++) {<br>                          prezArray[x] = new President();<br>                      }<br><br>            /* d. */  prezArray[25].setName( "McKinley" );<br><br>            /* e. */  prezArray[25].setParty( "R" );<br><br>            /* f. */  prezArray[35].setName( "Kennedy" );<br>                      prezArray[35].setParty( "D" );<br><br>            /* g. */  System.out.println( prezArray[14].toString() );<br><br></font>            displayAllPresidents();<br>        } // end of constructor<br><br>        public void displayAllPresidents() {<br>            System.out.println("Here are all the Presidents:");<br>            for (Integer p = 0; p &lt; prezArray.length; p++) {<br>                System.out.println( "\t" + prezArray[p].toString() );<br>            }<br>        } // end of displayAllPresidents()<br>
         //  frame and main methods would appear here...
         //  Omitted to save space.
 	
