@@ -1,6 +1,5 @@
 
 import java.awt.*;
-import java.applet.Applet;
 
 public class Student {
 
@@ -12,14 +11,14 @@ public class Student {
 	
 	
 	
-    public Student(String name, String dorm, Integer classCode,
-                   Boolean isAthlete, Double gpa) {
+    public Student(String n, String d, Integer cc,
+                   Boolean ath, Double g) {
 				   
-        setName(name);
-        setDorm(dorm);
-        setClassCode(classCode);
-        setIsAthlete(isAthlete);
-        setGpa(gpa);
+        setName(n);
+        setDorm(d);
+        setClassCode(cc);
+        setIsAthlete(ath);
+        setGpa(g);
     } // end of constructor
 
     public String getName() { return name; }
@@ -30,9 +29,11 @@ public class Student {
 
     public void setClassCode(Integer cc) {
         if ( (cc < 1) || (cc > 4) ) {
-            cc = 1;
-        } 
-        classCode = cc;
+            classCode = 1;
+        }
+        else {
+            classCode = cc;
+        }
     } // end of setClassCode()
 
     public void setIsAthlete(Boolean ath) {
@@ -41,22 +42,18 @@ public class Student {
 
     public void setGpa(Double g) {
         if ( (g < 0.0) || (g > 4.0) ) {
-            g = 0.0;
-        } 
-        gpa = g;
+            gpa = 0.0;
+        }
+        else {
+            gpa = g;
+        }
     } // end of setGPA()
 
     public void setName(String n) {
-        if (n.length() == 0) {
-            n = "unknown name";
-        } 
         name = n;
     } // end of setName()
 
     public void setDorm(String d) {
-        if (d.length() == 0) {
-            d = "unknown dorm";
-        }
         dorm = d;
     } // end of setDorm()
 
