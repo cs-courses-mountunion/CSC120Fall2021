@@ -50,7 +50,7 @@
 					To split each line of input into three pieces, we can use the following code in the
 					<code>for</code> loop that displays each line in the output area:
 <pre>
-    String[] part = lineOfInput[x].split(";");
+    String[] part = lineOfInput[index].split(";");
 </pre>					
                     Now we have an array of <code>String</code>s called <code>part</code>, where element 0
 					of the array contains the instrument name, element 1 contains the instrument's section
@@ -80,9 +80,8 @@
 					<ul>
 					    <li> split the input line into an array of Strings called <code>part</code>,
 						     using a semicolon as the delimiter (see the code example above) </li>
-						<li> <code> for (Integer p = 0; p < part.length; p++) {<br/> &nbsp; &nbsp; part[p] = part[p].trim();<br/>} // end for</code> </li>
-						<li> instantiate element <code>x</code> (or whatever you called your for loop control
-						     variable) of the array of <code>Instrument</code> objects, using the <code>part</code> array as the values to pass to the constructor method  </li>
+						<li> <code> for (Integer p = 0; p &lt; part.length; p++) {<br/> &nbsp; &nbsp; part[p] = part[p].trim();<br/>} // end for</code> </li>
+						<li> instantiate element <code>index</code> of the array of <code>Instrument</code> objects, using the <code>part</code> array as the values to pass to the constructor method  </li>
 							 <ul>
 							     <li> the first parameter for the constructor call should be &nbsp;<code>part[0]</code> </li>
 							     <li> the second parameter for the constructor call should be &nbsp;<code>part[1]</code> </li>
@@ -92,8 +91,8 @@
 <pre>
     outputArea.append( "line " + x + ": " + instrumentArray[index].toString() + "\n" );
 </pre>
-						 (you may need to change the names of <code>index</code> and <code>instrumentArray</code> in this
-						 sample to be the names you used in your program)</li>
+						 (you may need to change the name <code>instrumentArray</code> in this
+						 sample to be the name you used in your program)</li>
 					</ul>
 				    <br>
 				</li>
